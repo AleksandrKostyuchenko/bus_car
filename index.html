@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="uikit-develop/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--NAVBAR START-->
+        <progress id="js-progressbar" class="uk-progress uk-position-fixed"></progress>
+        <nav class="uk-navbar-container uk-visible@s uk-flex uk-flex-middle" uk-navbar>
+            <img class="logo" src="" alt="logo">
+            <div class="uk-flex uk-flex-column">
+                <a href="tel:+375290000000"><i class="fa-solid fa-phone"></i>+375290000000</a>
+                <a href="tel:+375290000000"><i class="fa-solid fa-phone"></i>+375290000000</a>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#timetable" uk-scroll>Расписание</a>
+                    </li>
+                    <li>
+                        <a href="#news" uk-scroll>Новости</a>
+                    </li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+            </div>
+            <div class="uk-navbar-right">
+
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a class="uk-button uk-padding-right" href="#form" uk-scroll>Забронировать</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="uk-hidden@s">
+            <nav class="uk-navbar uk-navbar-container" uk-navbar="mode: click">
+                <div class="uk-flex uk-flex-column uk-padding">
+                    <a href="tel:+375290000000"><i class="fa-solid fa-phone"></i>+375290000000</a>
+                    <a href="tel:+375290000000"><i class="fa-solid fa-phone"></i>+375290000000</a>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle" href="#">
+                        <span uk-navbar-toggle-icon></span>
+                    </a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#timetable" uk-scroll>Расписание</a></li>
+                            <li><a href="#news" uk-scroll>Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--NAVBAR END-->
+
+        <!--BACKGROUND START-->
+        <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/microbus.jpg" uk-img>
+            <h1>Минск-Новолукомль</h1>
+          </div>
+        
+        <!--BACKGROUND END-->
+
+        <!--ABOUT US START-->
+        <div class="uk-container">
+            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                <h3 class="uk-card-title uk-text-center uk-text-uppercase">О нас</h3>
+                <p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!--ABOUT US END-->
+        </div>
+            <!--FORM START-->
+
+            <h2 id="form" class="uk-container uk-text-center border">Забронировать место онлайн</h2>
+            <div class="uk-padding uk-child-width-1-2 uk-flex uk-flex-middle" style="background-color: #e4f1ed;" uk-grid>
+                <div>
+                    <form action="">
+                        <div class="uk-margin">
+                            <legend class="uk-legend uk-text-small"><span>*</span>Имя</legend>
+                            <input class="uk-input uk-form-width-large" type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="uk-margin">
+                            <legend class="uk-legend uk-text-small"><span>*</span>Телефон</legend>
+                            <input class="uk-input uk-form-width-large" id="phone" type="number" name="phone"
+                                placeholder="+375">
+                        </div>
+                        <div class="uk-margin">
+                            <legend class="uk-legend uk-text-small">Комментарий</legend>
+                            <div class="uk-flex">
+                                <input class="uk-input uk-form-width-large" type="text" name="text"
+                                    placeholder="Оставить комментарий">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <legend class="uk-legend uk-text-small"><span>*</span>Дата поездки </legend>
+                            <div class="uk-flex uk-flex-middle uk-flex-wrap">
+                                <input class="uk-input uk-form-width-small" id="phone" type="date" name="calendar">
+                                <span id="data"></span>
+                            </div>
+                        </div>
+                        <button class="uk-button uk-button-default" name="subscribe" type="submit">Отправить</button>
+                        <p><span>*</span>Нажимая на кнопку отправить Вы даете согласие на обработку Ваших персональных
+                            данных</p>
+                    </form>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <div class="uk-card-badge uk-label-success">Внимание</div>
+                        <p>Уважамые клиенты, забронировать место можно как по <a href="tel:+375296275343" style="color: blue;">телефону</a>
+                            так и онлай)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--FORM END-->
+        <div class="uk-container">
+            <!--TIMETABLE START-->
+            <div id="timetable" class="uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-section">
+                <div class="uk-flex uk-flex-center toggle-animation-queued toggle">
+                    <div>
+                        <h2 class="uk-text-uppercase uk-text-center">Минск<i
+                                class="fa-solid fa-van-shuttle"></i>Новолукомль</h2>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-center toggle-animation-queued toggle" hidden>
+                    <div>
+                        <h2 class="uk-text-uppercase uk-text-center">Новолукомль<i
+                                class="fa-solid fa-van-shuttle"></i>Минск</h2>
+                    </div>
+                </div>
+                <button class="uk-button uk-button-default" type="button"
+                    uk-toggle="target: .toggle-animation-queued; animation: uk-animation-fade; queued: true; duration: 300"><i
+                        class="fa fa-exchange" aria-hidden="true"></i></button>
+            </div>
+            <div class="uk-container">
+                <h3 class="uk-text-center border">Расписание отправлений</h3>
+                <div class="toggle toggle-animation-queued">
+                    <div>
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th>Место отправления</th>
+                                    <th>Время отправления</th>
+                                    <th>Время прибытия</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="toggle toggle-animation-queued" hidden>
+                    <div>
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th>Место отправления</th>
+                                    <th>Время отправления</th>
+                                    <th>Время прибытия</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pavel</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center">
+                <a class="uk-link-text" uk-icon="cloud-download" href="" download>Скачать расписание </a>
+            </div>
+
+            <!--TIMETABLE END-->
+
+            <!--MAP START-->
+            <h3 class="uk-heading-line uk-text-center"><span class="map">Остановочные пункты</span></h3>
+            <div>
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0fdb7aae8b7753d3fc46a6035a4c0910a750ff80d44e8e8fe871cd51ec093f92&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <!--MAP END-->
+
+
+            <!--NEWS START-->
+            <h2 id="news" class="uk-container uk-text-center border">Наши новости</h2>
+            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-flex uk-flex-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Default</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Primary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Secondary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Secondary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--NEWS END-->
+        </div>
+        <!--FOOTER START-->
+        <div class="uk-section uk-padding" style="background-color: #526885;">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav uk-flex uk-flex-wrap">
+                    <li>
+                        <a href="#timetable" uk-scroll>Расписание</a>
+                    </li>
+                    <li>
+                        <a href="#news" uk-scroll>Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>  
+           <div>
+            <p class="uk-text" style="color: white;">УНП 00000000</p>   
+           </div>     
+        </div>
+    
+
+
+
+        <!--FOOTER END-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="uikit-develop/dist/js/uikit.min.js"></script>
+        <script src="uikit-develop/dist/js/uikit-icons.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrolled = (winScroll / height) * 100;
+                document.getElementById("js-progressbar").style.width = scrolled + "%";
+            };
+            myFunction();
+
+            /*-------скрываем progress до скролла-----------*/
+            function pag() {
+                const progress = document.querySelector('progress');
+                if (pageYOffset.value == 0) {
+                    progress.classList.add('active');
+                }
+                if (pageYOffset.value > 0) {
+                    progress.classList.remove('acttive');
+                }
+            };
+            pag();
+
+    /*======DATA=========*/
+
+        </script>
+</body>
+</html>

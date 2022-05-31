@@ -1,0 +1,47 @@
+/*===========fonts=========*/
+/*font-family: 'Mulish', sans-serif;*/
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===========LOGO===========*/
+.logo{
+    padding: 0 30px;
+}
+
+/*=======FONTAWESOME=====*/
+
+.fa-exchange{
+  padding: 0 20px;
+  color: brown;
+}
+
+.fa-van-shuttle{
+    padding: 0 15px;
+    color: rgb(255, 0, 76);
+}
+
+.fa-phone{
+    color: greenyellow;
+}
+
+/*=======FONTAWESOME END=====*/
+
+.active{
+    display: none;
+}
+
+
+#data{
+    color: green;
+    padding-left: 20px;
+}
+
+
+/*====SPAN======*/
+.border{
+    border-bottom: 5px solid #666ceeb3;
+}
